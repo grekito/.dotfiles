@@ -1,4 +1,7 @@
 require'nvim-treesitter.configs'.setup {
+  options = {
+    theme = 'dracula-nvim'
+  },
   highlight = {
     enable = true,
   },
