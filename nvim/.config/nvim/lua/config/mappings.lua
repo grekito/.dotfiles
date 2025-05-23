@@ -24,5 +24,8 @@ keymap.set("n", "<leader>ec", "<cmd>NvimTreeCollapse<CR>", { desc = "Collapse fi
 keymap.set("n", "<leader>er", "<cmd>NvimTreeRefresh<CR>", { desc = "Refresh file explorer" }) -- refresh file explorer
 
 -- Fterm
-keymap.set('n', '<leader>z', ":lua require('FTerm').open()<CR>") --open term
+keymap.set('n', '<leader>z', ":lua require('FTerm').open()<CR>", { desc = "Open FTerm" }) --open term
 keymap.set('t', '<Esc>', '<C-\\><C-n><CMD>lua require("FTerm").close()<CR>') --preserves session
+vim.keymap.set('n', '<leader>g', function()
+  require('FTerm'):new({ cmd = 'lazygit' }):open()
+end, { desc = 'Open lazygit in FTerm' })
