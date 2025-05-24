@@ -41,6 +41,14 @@ Plug ('hrsh7th/cmp-path')
 Plug ('rafamadriz/friendly-snippets')
 Plug ('hrsh7th/nvim-cmp')
 
+-- LSP
+Plug ('WhoIsSethDaniel/mason-tool-installer.nvim')
+Plug ('williamboman/mason-lspconfig.nvim')
+Plug ('williamboman/mason.nvim')
+Plug ('antosha417/nvim-lsp-file-operations')
+Plug ('folke/neodev.nvim')
+Plug ('neovim/nvim-lspconfig')
+
 vim.call('plug#end')
 
 -- Core configurations
@@ -64,3 +72,5 @@ require('plugins.auto-session')
 require('plugins.dressing')
 require('plugins.copilot')
 require('plugins.cmp')
+require('plugins.lsp.mason')
+require('plugins.lsp.lspconfig')
