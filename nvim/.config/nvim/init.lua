@@ -11,6 +11,8 @@ local Plug = vim.fn['plug#']
 
 vim.call('plug#begin')
 
+Plug ('nvim-tree/nvim-web-devicons')
+
 Plug ('christoomey/vim-tmux-navigator')
 Plug ('nvim-lua/plenary.nvim')
 Plug ('nvim-telescope/telescope-fzf-native.nvim')
@@ -20,7 +22,6 @@ Plug ('nvim-tree/nvim-tree.lua')
 Plug ('nvim-treesitter/nvim-treesitter')
 Plug ('Mofiqul/dracula.nvim')
 Plug ('nvim-lualine/lualine.nvim')
-Plug ('nvim-tree/nvim-web-devicons')
 Plug ('folke/which-key.nvim')
 Plug ('lukas-reineke/indent-blankline.nvim')
 Plug ('mfussenegger/nvim-lint')
@@ -28,6 +29,17 @@ Plug ('numToStr/FTerm.nvim')
 Plug ('nvim-telescope/telescope.nvim')
 Plug ('rmagatti/auto-session')
 Plug ('stevearc/dressing.nvim')
+Plug ('zbirenbaum/copilot.lua')
+
+-- CMP
+Plug ('L3MON4D3/LuaSnip')
+Plug ('saadparwaiz1/cmp_luasnip')
+Plug ('onsails/lspkind.nvim')
+Plug ('hrsh7th/cmp-nvim-lsp')
+Plug ('hrsh7th/cmp-buffer')
+Plug ('hrsh7th/cmp-path')
+Plug ('rafamadriz/friendly-snippets')
+Plug ('hrsh7th/nvim-cmp')
 
 vim.call('plug#end')
 
@@ -50,3 +62,5 @@ require('plugins.fterm')
 require('plugins.telescope')
 require('plugins.auto-session')
 require('plugins.dressing')
+require('plugins.copilot')
+require('plugins.cmp')
