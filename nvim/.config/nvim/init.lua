@@ -42,12 +42,12 @@ Plug ('rafamadriz/friendly-snippets')
 Plug ('hrsh7th/nvim-cmp')
 
 -- LSP
-Plug ('WhoIsSethDaniel/mason-tool-installer.nvim')
-Plug ('williamboman/mason-lspconfig.nvim')
-Plug ('williamboman/mason.nvim')
 Plug ('antosha417/nvim-lsp-file-operations')
 Plug ('folke/neodev.nvim')
 Plug ('neovim/nvim-lspconfig')
+Plug ('WhoIsSethDaniel/mason-tool-installer.nvim')
+Plug ('williamboman/mason-lspconfig.nvim')
+Plug ('williamboman/mason.nvim')
 
 vim.call('plug#end')
 
