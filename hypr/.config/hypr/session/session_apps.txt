@@ -1,0 +1,5 @@
+4|/usr/lib/firefox/firefox
+4|kitty
+4|kitty
+4|kitty
+4|kitty
