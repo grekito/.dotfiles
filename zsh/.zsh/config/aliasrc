@@ -1,0 +1,5 @@
+alias ls='eza'
+
+alias clean-disk='gdu -i /media,/run/timeshift'
+
+# alias esp-idf='source'
