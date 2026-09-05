@@ -30,6 +30,7 @@ opt.backspace = "indent,eol,start"
 
 -- Clipboard
 opt.clipboard:append("unnamedplus")
+opt.clipboard = "unnamedplus"
 
 -- Split Windows
 opt.splitright = true
